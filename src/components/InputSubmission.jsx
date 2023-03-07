@@ -33,7 +33,10 @@ function InputSubmission() {
           <div className="bg-purple-900 text-white p-3 text-2xl">
             You entered: {name}
           </div>
-          <button className="my-3 p-2" onClick={() => setName(null)}>
+          <button
+            className="my-3 p-2 bg-stone-400 hover:bg-stone-500 rounded-md"
+            onClick={() => setName(null)}
+          >
             Reset
           </button>
         </div>

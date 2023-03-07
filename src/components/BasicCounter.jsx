@@ -1,14 +1,17 @@
 import { useState } from "react";
 
 function BasicCounter() {
+  // Set default of 0 to state
   const [number, setNumber] = useState(() => {
     return 0;
   });
 
+  // Function to increase number when user clicks the increase button
   function increaseNumber() {
     setNumber((currentNumber) => currentNumber + 1);
   }
 
+  // Function to decrease the number when the user clicks the decrease button
   function decreaseNumber() {
     setNumber((currentNumber) => currentNumber - 1);
   }
